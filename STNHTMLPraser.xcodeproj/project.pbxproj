@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BFFFFDD6B26F6A2F796A5F4 /* libPods-STNHTMLPraser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A394BDE73AC0DBB19946D7F /* libPods-STNHTMLPraser.a */; };
 		8EBEB9D91BC8B9460051343B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBEB9D81BC8B9460051343B /* main.m */; };
 		8EBEB9DC1BC8B9460051343B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBEB9DB1BC8B9460051343B /* AppDelegate.m */; };
 		8EBEB9DF1BC8B9460051343B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBEB9DE1BC8B9460051343B /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21DD11C2841E031123D01AEB /* Pods-STNHTMLPraser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNHTMLPraser.release.xcconfig"; path = "Pods/Target Support Files/Pods-STNHTMLPraser/Pods-STNHTMLPraser.release.xcconfig"; sourceTree = "<group>"; };
+		3A394BDE73AC0DBB19946D7F /* libPods-STNHTMLPraser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STNHTMLPraser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBEB9D41BC8B9460051343B /* STNHTMLPraser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STNHTMLPraser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBEB9D81BC8B9460051343B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EBEB9DA1BC8B9460051343B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		8EBEB9FB1BC8B9460051343B /* STNHTMLPraserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STNHTMLPraserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBEB9FF1BC8B9460051343B /* STNHTMLPraserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STNHTMLPraserUITests.m; sourceTree = "<group>"; };
 		8EBEBA011BC8B9460051343B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7EA51FF828ECEE989B17239 /* Pods-STNHTMLPraser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNHTMLPraser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STNHTMLPraser/Pods-STNHTMLPraser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BFFFFDD6B26F6A2F796A5F4 /* libPods-STNHTMLPraser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D688F34841B30BFC8E86E9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7EA51FF828ECEE989B17239 /* Pods-STNHTMLPraser.debug.xcconfig */,
+				21DD11C2841E031123D01AEB /* Pods-STNHTMLPraser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8EBEB9CB1BC8B9460051343B = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +101,8 @@
 				8EBEB9F31BC8B9460051343B /* STNHTMLPraserTests */,
 				8EBEB9FE1BC8B9460051343B /* STNHTMLPraserUITests */,
 				8EBEB9D51BC8B9460051343B /* Products */,
+				0D688F34841B30BFC8E86E9F /* Pods */,
+				C60C0D94D95F8A41F8DDE148 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +159,14 @@
 			path = STNHTMLPraserUITests;
 			sourceTree = "<group>";
 		};
+		C60C0D94D95F8A41F8DDE148 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A394BDE73AC0DBB19946D7F /* libPods-STNHTMLPraser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EBEBA041BC8B9460051343B /* Build configuration list for PBXNativeTarget "STNHTMLPraser" */;
 			buildPhases = (
+				3D364105E7776988C72D5301 /* Check Pods Manifest.lock */,
 				8EBEB9D01BC8B9460051343B /* Sources */,
 				8EBEB9D11BC8B9460051343B /* Frameworks */,
 				8EBEB9D21BC8B9460051343B /* Resources */,
+				37C67F40CC5A61D30F974BBF /* Embed Pods Frameworks */,
+				01ECAB1E27A7BCC07FDE9359 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01ECAB1E27A7BCC07FDE9359 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STNHTMLPraser/Pods-STNHTMLPraser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37C67F40CC5A61D30F974BBF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STNHTMLPraser/Pods-STNHTMLPraser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D364105E7776988C72D5301 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EBEB9D01BC8B9460051343B /* Sources */ = {
@@ -415,9 +490,11 @@
 		};
 		8EBEBA051BC8B9460051343B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7EA51FF828ECEE989B17239 /* Pods-STNHTMLPraser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STNHTMLPraser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stone.workbench.STNHTMLPraser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,9 +503,11 @@
 		};
 		8EBEBA061BC8B9460051343B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DD11C2841E031123D01AEB /* Pods-STNHTMLPraser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STNHTMLPraser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stone.workbench.STNHTMLPraser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +581,7 @@
 				8EBEBA061BC8B9460051343B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EBEBA071BC8B9460051343B /* Build configuration list for PBXNativeTarget "STNHTMLPraserTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +590,7 @@
 				8EBEBA091BC8B9460051343B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EBEBA0A1BC8B9460051343B /* Build configuration list for PBXNativeTarget "STNHTMLPraserUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +599,7 @@
 				8EBEBA0C1BC8B9460051343B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
